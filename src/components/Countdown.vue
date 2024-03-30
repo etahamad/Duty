@@ -48,13 +48,29 @@ onUnmounted(() => {
 
 const formattedCountdown = computed(() => {
   if (props.format === 'months-days') {
-    const months = Math.floor(totalDays.value / 30)
-    const days = totalDays.value % 30
-    return `${months} months, ${days} days`
+    const now = new Date();
+    let years = targetDate.getFullYear() - now.getFullYear();
+    let months;
+    let days;
+
+    months = targetDate.getMonth() - now.getMonth();
+    if (months < 0) {
+      months += 12;
+      years--;
+    }
+
+    days = targetDate.getDate() - now.getDate();
+    if (days < 0) {
+      months--;
+      let nowLastMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+      days += nowLastMonth.getDate();
+    }
+
+    return `${months} months, ${days} days`;
   } else {
-    return `${totalDays.value} days`
+    return `${totalDays.value} days`;
   }
-})
+});
 
 const percentageDone = computed(() => {
   return ((totalDaysBetween - totalDays.value) / totalDaysBetween * 100).toFixed(0)
