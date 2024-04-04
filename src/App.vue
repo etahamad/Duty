@@ -11,7 +11,6 @@ import EgyptHolidays from './components/EgyptHolidays.vue'
       <span>View on GitHub</span>
     </a>
     <h3 class="quran">وَأَن لَّيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ (39) وَأَنَّ سَعْيَهُ سَوْفَ يُرَىٰ (40)﴾ [ سورة النجم ]﴿</h3>
-    <Countdown format="days" label="Days left:" />
     <Countdown format="months-days" label="Months and days left:" />
     <hr class="divider" />
     <EgyptHolidays />
