@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>{{ label }} {{ formattedCountdown }}</h3>
+    <h4>{{ label }} {{ formattedCountdown }}</h4>
     <ProgressBar :value="Number(percentageDone)" :showValue="true" :displayValueTemplate="valueTemplate" :style="{height: '20px'}" />
   </div>
 </template>

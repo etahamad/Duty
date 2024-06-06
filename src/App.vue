@@ -11,8 +11,10 @@ import EgyptHolidays from './components/EgyptHolidays.vue'
       <span>View on GitHub</span>
     </a>
     <h3 class="quran">
-      <span>وَأَن لَّيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ (39)</span>
-      <span>وَأَنَّ سَعْيَهُ سَوْفَ يُرَىٰ (40) [سورة النجم]</span>
+      <div class="verses">
+        <span>وَأَن لَّيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ (39)</span>
+        <span>وَأَنَّ سَعْيَهُ سَوْفَ يُرَىٰ (40) [سورة النجم]</span>
+      </div>
     </h3>
     <Countdown format="months-days" label="Time left:" />
     <hr class="divider" />
@@ -23,10 +25,18 @@ import EgyptHolidays from './components/EgyptHolidays.vue'
 <style scoped>
 .quran {
   font-family: conv_original-hafs,'Traditional Arabic',tahoma, serif;
-  font-size: 1.44em;
+  font-size: 1.2em; /* Adjust the font size here */
+  width: 100%; /* Ensure the container takes the full width */
+  text-align: center; /* Center the text */
 }
 .quran span {
   display: block;
+  overflow-wrap: break-word; /* Break the word if it's too long */
+}
+.quran .verses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .divider {
   border: none;
