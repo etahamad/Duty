@@ -10,7 +10,10 @@ import EgyptHolidays from './components/EgyptHolidays.vue'
       <i class="fab fa-github"></i>
       <span>View on GitHub</span>
     </a>
-    <h3 class="quran">وَأَن لَّيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ (39) وَأَنَّ سَعْيَهُ سَوْفَ يُرَىٰ (40)﴾ [ سورة النجم ]﴿</h3>
+    <h3 class="quran">
+      <span>وَأَن لَّيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ (39)</span>
+      <span>وَأَنَّ سَعْيَهُ سَوْفَ يُرَىٰ (40) [سورة النجم]</span>
+    </h3>
     <Countdown format="months-days" label="Time left:" />
     <hr class="divider" />
     <EgyptHolidays />
@@ -21,6 +24,9 @@ import EgyptHolidays from './components/EgyptHolidays.vue'
 .quran {
   font-family: conv_original-hafs,'Traditional Arabic',tahoma, serif;
   font-size: 1.44em;
+}
+.quran span {
+  display: block;
 }
 .divider {
   border: none;
