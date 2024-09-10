@@ -38,7 +38,7 @@ const holidays: Holiday[] = [
   { "date": "2024-06-30", "localName": "June 30 Revolution" },
   { "date": "2024-07-08", "localName": "Islamic New Year" },
   { "date": "2024-07-23", "localName": "The July 23 Revolution Day (July 23, 1952)" },
-  { "date": "2024-09-16", "localName": "Prophet Muhammad's Birthday (Mawlid Al-Nabi)" },
+  { "date": "2024-09-15", "localName": "Prophet Muhammad's Birthday (Mawlid Al-Nabi)" },
   { "date": "2024-10-06", "localName": "Armed Forces Day (October 6, 1973)" }
 ]
 
