@@ -21,7 +21,7 @@ const props = defineProps({
 })
 
 const startDate = new Date('2024-02-25T00:00:00')
-const targetDate = new Date('2025-02-25T00:00:00')
+const targetDate = new Date('2025-02-10T00:00:00')
 const totalDaysBetween = Math.floor((targetDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24))
 let totalDays = ref(totalDaysBetween)
 
