@@ -1,7 +1,6 @@
 <script setup lang="ts">
 
 import Countdown from './components/Countdown.vue'
-import EgyptHolidays from './components/EgyptHolidays.vue'
 </script>
 
 <template>
@@ -17,26 +16,26 @@ import EgyptHolidays from './components/EgyptHolidays.vue'
       </div>
     </h3>
     <Countdown format="months-days" label="Time left:" />
-    <hr class="divider" />
-    <EgyptHolidays />
   </div>
 </template>
 
 <style scoped>
 .quran {
   font-family: conv_original-hafs,'Traditional Arabic',tahoma, serif;
-  font-size: 1.2em; /* Adjust the font size here */
-  width: 100%; /* Ensure the container takes the full width */
-  text-align: center; /* Center the text */
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
 }
 .quran span {
   display: block;
-  overflow-wrap: break-word; /* Break the word if it's too long */
+  overflow-wrap: break-word;
 }
 .quran .verses {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 .divider {
   border: none;
@@ -56,5 +55,11 @@ import EgyptHolidays from './components/EgyptHolidays.vue'
 .fab {
   font-size: 24px;
   color: #000;
+}
+@media (max-width: 768px) {
+  .quran {
+    font-size: 1.8em;
+    padding: 0 1rem;
+  }
 }
 </style>
