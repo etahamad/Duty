@@ -32,6 +32,29 @@
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import ProgressBar from 'primevue/progressbar';
 
+const messages = [
+  {
+    arabic: "🫡 صبر جميل والله المستعان",
+    english: "Beautiful patience, and Allah is the one sought for help"
+  },
+  {
+    arabic: "✨ اللهم اجعل لنا من كل ضيق مخرجا",
+    english: "O Allah, make for us a way out of every difficulty"
+  },
+  {
+    arabic: "🌟 مع الصبر يأتي الفرج",
+    english: "With patience comes relief"
+  },
+  {
+    arabic: "💫 كل شيء بقدر",
+    english: "Everything happens by divine decree"
+  },
+  {
+    arabic: "🤲 الحمد لله على كل حال",
+    english: "Praise be to Allah in all circumstances"
+  }
+]
+
 const props = defineProps({
   format: {
     type: String,
@@ -106,29 +129,6 @@ const percentageDone = computed(() => {
 })
 
 const valueTemplate = (value: number) => `${value}`;
-
-const messages = [
-  {
-    arabic: "🫡 صبر جميل والله المستعان",
-    english: "Beautiful patience, and Allah is the one sought for help"
-  },
-  {
-    arabic: "✨ اللهم اجعل لنا من كل ضيق مخرجا",
-    english: "O Allah, make for us a way out of every difficulty"
-  },
-  {
-    arabic: "🌟 مع الصبر يأتي الفرج",
-    english: "With patience comes relief"
-  },
-  {
-    arabic: "💫 كل شيء بقدر",
-    english: "Everything happens by divine decree"
-  },
-  {
-    arabic: "🤲 الحمد لله على كل حال",
-    english: "Praise be to Allah in all circumstances"
-  }
-]
 
 const handleClick = () => {
   clickCount.value++
