@@ -11,8 +11,7 @@ import Countdown from './components/Countdown.vue'
     </a>
     <h3 class="quran">
       <div class="verses">
-        <span>وَأَن لَّيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ (39)</span>
-        <span>وَأَنَّ سَعْيَهُ سَوْفَ يُرَىٰ (40) [سورة النجم]</span>
+        <span>وَقُل رَّبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ وَأَخْرِجْنِي مُخْرَجَ صِدْقٍ وَاجْعَل لِّي مِن لَّدُنكَ سُلْطَانًا نَّصِيرًا (80) [سورة الإسراء]</span>
       </div>
     </h3>
     <Countdown format="months-days" label="Time left:" />
